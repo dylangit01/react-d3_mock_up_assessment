@@ -26,6 +26,6 @@ export default makeStyles(theme => ({
     display: 'flex',
   },
   trend: {
-    marginRight: theme.spacing(5)
+    marginRight: theme.spacing(6)
   }
 }))
