@@ -9,7 +9,7 @@ const Filter = () => {
   const classes = useStyles()
 
   return (
-    <Container maxWidth='md' className={ classes.root }>
+    <Container maxWidth='lg' className={ classes.root }>
       <Grid container className={ classes.content }>
         <Grid item>
           <Typography variant='body1'>
@@ -34,7 +34,7 @@ const Filter = () => {
         </Grid>
         <Grid item sm />
         <Grid item className={classes.btnConfig}>
-          <Typography variant='h6'>
+          <Typography variant='h6' className={classes.trend}>
             QUALITY SCORE TREND
           </Typography>
           <Buttons/>

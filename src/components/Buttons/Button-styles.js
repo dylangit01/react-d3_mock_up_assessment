@@ -12,10 +12,3 @@ export default makeStyles(theme => ({
     },
   },
 }))
-
-
-
-
-// '& .MuiButton-containedSizeSmall': {
-//   padding: '4px 4px'
-// }

@@ -3,12 +3,9 @@ import React from 'react'
 
 export default makeStyles(theme => ({
   root: {
-    marginTop: theme.spacing(5)
+    marginTop: theme.spacing(5),
+    padding: '0 100px'
   },
-  // content: {
-  //   display: 'flex',
-  //   justifyContent: 'space-between'
-  // },
   checkboxes: {
     padding: theme.spacing(1),
     border: '1px solid #ddd',
@@ -27,5 +24,8 @@ export default makeStyles(theme => ({
   },
   btnConfig: {
     display: 'flex',
+  },
+  trend: {
+    marginRight: theme.spacing(5)
   }
 }))

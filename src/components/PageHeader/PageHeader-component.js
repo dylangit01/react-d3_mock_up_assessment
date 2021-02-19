@@ -8,7 +8,7 @@ const PageHeader = ({ title, icon, subTitle }) => {
 
   return (
     <>
-      <Container maxWidth='md'>
+      <Container maxWidth='lg' className={classes.root}>
         <div className={ classes.title }>
           <Typography variant='h5' component='div'>
             { title }
@@ -16,7 +16,7 @@ const PageHeader = ({ title, icon, subTitle }) => {
         </div>
       </Container>
       <div className={classes.subBg}>
-        <Container maxWidth='md'>
+        <Container maxWidth='lg'>
           <div className={ classes.sub }>
             <div className={ classes.subContent }>
               { icon }

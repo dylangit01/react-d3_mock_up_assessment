@@ -1,6 +1,9 @@
 import makeStyles from '@material-ui/core/styles/makeStyles'
 
 export default makeStyles(theme => ({
+  root: {
+    padding: '0 100px'
+  },
   title: {
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(1)
@@ -10,6 +13,7 @@ export default makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     fontSize: '20px',
+    padding: '0 80px'
   },
   subContent: {
     display: 'flex',
