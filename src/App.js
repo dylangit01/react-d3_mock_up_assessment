@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import SideMenu from './components/SideMenu/SideMenu-component'
+import makeStyles from '@material-ui/core/styles/makeStyles'
+import Header from './components/Header/Header-component'
+import { CssBaseline, Container } from '@material-ui/core'
+import PageHeader from './components/PageHeader/PageHeader-component'
+import LanguageIcon from '@material-ui/icons/Language';
+import Filter from './components/Filters/Filters'
 
-function App() {
+const useStyles = makeStyles({
+  appMain: {
+    paddingLeft: '50px',
+    width: '100%',
+    height: '50px'
+  }
+})
+
+const App = () => {
+  const classes = useStyles()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <CssBaseline>
+        <SideMenu/>
+        <div className={ classes.appMain }>
+          <Header/>
+          <PageHeader
+            title='PERFORMANCE MANAGEMENT'
+            subTitle='Diagnostic Tool'
+            icon={<LanguageIcon fontSize='large'/>}
+          />
+            <Filter />
+        </div>
+      </CssBaseline>
+    </>
+  )
 }
 
-export default App;
+export default App
