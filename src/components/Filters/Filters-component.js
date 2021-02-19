@@ -3,6 +3,7 @@ import { Container, Grid, Typography } from '@material-ui/core'
 import useStyles from './Filters-styles'
 import Checkbox from '../Checkbox/Checkbox'
 import InfoIcon from '@material-ui/icons/Info';
+import Buttons from '../Buttons/Button'
 
 const Filter = () => {
   const classes = useStyles()
@@ -10,7 +11,7 @@ const Filter = () => {
   return (
     <Container maxWidth='md' className={ classes.root }>
       <Grid container className={ classes.content }>
-        <Grid item sm={ 3 }>
+        <Grid item>
           <Typography variant='body1'>
             Filters
           </Typography>
@@ -20,21 +21,23 @@ const Filter = () => {
                 name='cqaResults'
                 label='All CQA Results'
               />
-              <InfoIcon style={ { fontSize: '15px' } }/>
+              <InfoIcon className={classes.icInfo}/>
             </div>
             <div className={ classes.filterInfo }>
               <Checkbox
                 name='cqaCloseLoop'
                 label='CQAs with Closed Loop'
               />
-              <InfoIcon style={ { fontSize: '15px' } }/>
+              <InfoIcon className={classes.icInfo}/>
             </div>
           </div>
         </Grid>
-        <Grid item sm={ 9 }>
-          <Typography variant='body1'>
+        <Grid item sm />
+        <Grid item className={classes.btnConfig}>
+          <Typography variant='h6'>
             QUALITY SCORE TREND
           </Typography>
+          <Buttons/>
         </Grid>
       </Grid>
 

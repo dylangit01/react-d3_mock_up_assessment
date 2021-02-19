@@ -5,10 +5,10 @@ export default makeStyles(theme => ({
   root: {
     marginTop: theme.spacing(5)
   },
-  actionTitle: {
-    display: 'flex',
-    justifyContent: 'space-between'
-  },
+  // content: {
+  //   display: 'flex',
+  //   justifyContent: 'space-between'
+  // },
   checkboxes: {
     padding: theme.spacing(1),
     border: '1px solid #ddd',
@@ -18,7 +18,14 @@ export default makeStyles(theme => ({
     }
   },
   filterInfo: {
+    marginLeft: theme.spacing(1),
     display: 'flex',
     alignItems: 'center'
+  },
+  icInfo: {
+    fontSize: '15px'
+  },
+  btnConfig: {
+    display: 'flex',
   }
 }))

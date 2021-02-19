@@ -5,7 +5,7 @@ import Header from './components/Header/Header-component'
 import { CssBaseline, Container } from '@material-ui/core'
 import PageHeader from './components/PageHeader/PageHeader-component'
 import LanguageIcon from '@material-ui/icons/Language';
-import Filter from './components/Filters/Filters'
+import Filter from './components/Filters/Filters-component'
 
 const useStyles = makeStyles({
   appMain: {
