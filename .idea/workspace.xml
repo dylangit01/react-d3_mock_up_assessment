@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8856a28b-2e7a-4688-956e-0a570f350236" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/GaugeChart/GaugeChart-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GaugeChartWithPk/GaugeChartWithPk-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GaugeChartWithPk/GaugeChartWithPk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GaugeChartWithPk/donut-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleChart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button-styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filters/Filters-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filters/Filters-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filters/Filters-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filters/Filters-styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Controls/Controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GaugeChart/GaugeChart-component.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -37,11 +47,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/GaugeChartWithPackage" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
@@ -73,5 +87,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1613799668227">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1680.0.1920.1080/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1613799647395" />
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1680.25.1920.1055/-1920.25.1920.1055/0.0.1680.1050@0.0.1680.1050" timestamp="1613799668227" />
   </component>
 </project>

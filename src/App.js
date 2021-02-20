@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import SideMenu from './components/SideMenu/SideMenu-component'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Header from './components/Header/Header-component'
-import { CssBaseline, Container } from '@material-ui/core'
+import { CssBaseline } from '@material-ui/core'
 import PageHeader from './components/PageHeader/PageHeader-component'
 import LanguageIcon from '@material-ui/icons/Language';
 import Filter from './components/Filters/Filters-component'
+import GaugeCharts from './components/GaugeCharts/GaugeCharts-component'
 
 const useStyles = makeStyles({
   appMain: {
@@ -17,6 +18,22 @@ const useStyles = makeStyles({
 
 const App = () => {
   const classes = useStyles()
+
+  const [gaugeData, setGaugeData] = useState([])
+  const [areaData, setAreaData] = useState([])
+
+  const getData= async () => {
+    const res = await fetch('d3Data.json')
+    const data = await res.json()
+    const {gaugeData, areaData} = data
+    setGaugeData(gaugeData)
+    setAreaData(areaData)
+    // console.log(gaugeData, areaData)
+  }
+
+  useEffect(() => {
+    getData()
+  }, [])
 
   return (
     <>
@@ -30,6 +47,7 @@ const App = () => {
             icon={<LanguageIcon fontSize='large'/>}
           />
             <Filter />
+            <GaugeCharts gaugeData={gaugeData} />
         </div>
       </CssBaseline>
     </>

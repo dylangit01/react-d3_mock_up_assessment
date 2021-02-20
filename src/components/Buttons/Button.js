@@ -6,7 +6,7 @@ import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material
 const theme = createMuiTheme({
   palette:{
     primary: {
-      main: '#0071C5'
+      main: '#0071C5 !important'
     }
   }
 })
