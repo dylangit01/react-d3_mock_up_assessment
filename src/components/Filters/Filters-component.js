@@ -9,8 +9,7 @@ import { useSelector } from 'react-redux'
 const Filter = () => {
   const classes = useStyles()
 
-  const title = useSelector(state=> state.chartReducer)
-  console.log(title)
+  const title = useSelector(state => state.chartReducer)
 
   return (
     <Container maxWidth='lg' className={ classes.root }>
@@ -25,22 +24,22 @@ const Filter = () => {
                 name='cqaResults'
                 label='All CQA Results'
               />
-              <InfoIcon className={classes.icInfo}/>
+              <InfoIcon className={ classes.icInfo }/>
             </div>
             <div className={ classes.filterInfo }>
               <Checkbox
                 name='cqaCloseLoop'
                 label='CQAs with Closed Loop'
               />
-              <InfoIcon className={classes.icInfo}/>
+              <InfoIcon className={ classes.icInfo }/>
             </div>
           </div>
         </Grid>
-        <Grid item sm />
-        <Grid item className={classes.btnConfig}>
-          <Typography variant='h6' className={classes.trend}>
+        <Grid item sm/>
+        <Grid item className={ classes.btnConfig }>
+          <Typography variant='h6' className={ classes.trend }>
             {
-              title ? `${title} Trend`.toUpperCase() : 'QUALITY SCORE TREND'
+              title ? `${ title } Trend`.toUpperCase() : 'QUALITY SCORE TREND'
             }
           </Typography>
           <Buttons/>

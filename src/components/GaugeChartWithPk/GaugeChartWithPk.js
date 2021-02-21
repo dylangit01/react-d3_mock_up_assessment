@@ -3,7 +3,7 @@ import DonutChart from 'react-d3-donut';
 import { Card, Grid, Container } from '@material-ui/core'
 import useStyles from './GaugeChartWithPk-styles'
 
-// Not using this component:
+// Not using this component as it utilized by a package
 
 // const GaugeChartWithPk = ({ chartData }) => {
 //   const classes = useStyles()
@@ -30,12 +30,9 @@ import useStyles from './GaugeChartWithPk-styles'
 //               displayTooltip={ true }
 //               strokeWidth={ 0 }
 //               data={ data }/>
-//
 //           </div>
-//
 //         </Grid>
 //       </Container>
-//
 //     </>
 //   )
 // }

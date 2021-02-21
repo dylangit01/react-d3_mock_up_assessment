@@ -3,7 +3,8 @@ import {select, arc, pie} from 'd3'
 import useStyles from './GaugeChart-styles'
 
 
-// Not using this component as no idea how to style SVG ..lol...
+// !! Not using this component as no idea how to style all SVG gauge charts in one component ..lol...
+
 
 // const GaugeChart = ({chartData, title, index}) => {
 //   const classes = useStyles()

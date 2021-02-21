@@ -10,10 +10,12 @@ import AreaChart from '../AreaChart/AreaChart-component'
 const GaugeCharts = ({ areaData, gaugeData }) => {
   const classes = useStyles()
 
+  // This is not the way to show the chart dynamically, but I dont know how to style d3/SVG if mapping them in child component...
+
   return (
     !gaugeData.length ? <CircularProgress/> : (
       <>
-        <Container maxWidth='lg' className={classes.root}>
+        <Container maxWidth='lg' className={ classes.root }>
           <div>
             <SingleChart gaugeData={ gaugeData[0] }
             />
@@ -32,10 +34,10 @@ const GaugeCharts = ({ areaData, gaugeData }) => {
           <>
             {
               !areaData?.Basics?.length ? <CircularProgress/> : (
-                <AreaChart areaData={areaData}/>
+                <AreaChart areaData={ areaData }/>
               )
             }
-            </>
+          </>
         </Container>
       </>
     )
