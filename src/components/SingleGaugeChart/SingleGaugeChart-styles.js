@@ -22,6 +22,7 @@ export default makeStyles(theme=>({
     },
   },
   itemColor: {
-    color: '#5D70C1'
+    color: '#5D70C1',
+    margin: theme.spacing(.3)
   }
 }))
