@@ -46,7 +46,7 @@ const SingleChart = ({ gaugeData }) => {
           <p className={ classes.itemColor }>{ score } %</p>
           <svg width='150' height='250' className={ classes.svg } ref={ svgRef }>
           </svg>
-          <p>Sample: { sample }</p>
+          <p className={classes.sample}>Sample: { sample }</p>
         </div>
       </Button>
     </>

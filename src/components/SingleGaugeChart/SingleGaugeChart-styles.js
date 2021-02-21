@@ -23,6 +23,10 @@ export default makeStyles(theme=>({
   },
   itemColor: {
     color: '#5D70C1',
-    margin: theme.spacing(.7)
+    margin: theme.spacing(.8)
+  },
+  sample: {
+    margin: theme.spacing(.8),
+    fontSize: '15px'
   }
 }))

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8856a28b-2e7a-4688-956e-0a570f350236" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
