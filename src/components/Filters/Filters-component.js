@@ -4,9 +4,12 @@ import useStyles from './Filters-styles'
 import Checkbox from '../Checkbox/Checkbox'
 import InfoIcon from '@material-ui/icons/Info';
 import Buttons from '../Buttons/Button'
+import { useSelector } from 'react-redux'
 
 const Filter = () => {
   const classes = useStyles()
+
+  const title = useSelector(state=> state.chartReducer)
 
   return (
     <Container maxWidth='lg' className={ classes.root }>
@@ -35,7 +38,12 @@ const Filter = () => {
         <Grid item sm />
         <Grid item className={classes.btnConfig}>
           <Typography variant='h6' className={classes.trend}>
-            QUALITY SCORE TREND
+            {
+              title ? `${title} Trend`.toUpperCase() : 'QUALITY SCORE TREND'
+            }
+
+
+
           </Typography>
           <Buttons/>
         </Grid>

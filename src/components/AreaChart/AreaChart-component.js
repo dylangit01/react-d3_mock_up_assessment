@@ -8,14 +8,14 @@ const AreaChart = ({ areaData }) => {
   const classes = useStyles()
 
   const currentName = useSelector(state => state.chartReducer)
+  console.log(currentName)
 
-  const { Basics } = areaData
+  const defaultData = areaData['Quality Score']
 
   const currData = areaData[currentName]
-  console.log(currData)
 
-  let xData = currentName ? currData.map(value => value.date) : Basics.map(value => value.date)
-  let yData = currentName ? currData.map(value => value.score): Basics.map(value => value.score)
+  let xData = currentName ? currData.map(value => value.date) : defaultData.map(value => value.date)
+  let yData = currentName ? currData.map(value => value.score): defaultData.map(value => value.score)
 
   console.log(xData, yData)
   // x=date
@@ -37,11 +37,11 @@ const AreaChart = ({ areaData }) => {
     svg.select('.y-axis').style('transform', 'translateX(450px').call(yAxis)
 
     const margin = {top: 60, right: 40, bottom: 88, left: 105}
-    const innerHight = 300-margin.top-margin.bottom
+    const innerHeight = 300-margin.top-margin.bottom
 
     const myArea = area()
       .x((value, index) => xScale(index))
-      .y0(innerHight)
+      .y0(innerHeight)
       .y1(yScale)
       .curve(curveCardinal)
 
