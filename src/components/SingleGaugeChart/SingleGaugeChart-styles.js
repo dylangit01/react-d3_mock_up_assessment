@@ -23,6 +23,6 @@ export default makeStyles(theme=>({
   },
   itemColor: {
     color: '#5D70C1',
-    margin: theme.spacing(.5)
+    margin: theme.spacing(.7)
   }
 }))
