@@ -1,10 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import {select, arc, pie} from 'd3'
 import useStyles from './SingleGaugeChart-styles'
-import {Grid} from '@material-ui/core'
-import Container from '@material-ui/core/Container'
 import Button from '@material-ui/core/Button'
-import './SingleChart.css'
 
 const SingleChart = ({gaugeData}) => {
   const classes = useStyles()

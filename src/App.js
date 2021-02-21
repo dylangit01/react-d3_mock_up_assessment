@@ -25,10 +25,9 @@ const App = () => {
   const getData= async () => {
     const res = await fetch('d3Data.json')
     const data = await res.json()
-    const {gaugeData, areaData} = data
+    const {gaugeData, areaData} = await data
     setGaugeData(gaugeData)
     setAreaData(areaData)
-    // console.log(gaugeData, areaData)
   }
 
   useEffect(() => {
@@ -47,7 +46,7 @@ const App = () => {
             icon={<LanguageIcon fontSize='large'/>}
           />
             <Filter />
-            <GaugeCharts gaugeData={gaugeData} />
+            <GaugeCharts areaData={areaData} gaugeData={gaugeData} />
         </div>
       </CssBaseline>
     </>

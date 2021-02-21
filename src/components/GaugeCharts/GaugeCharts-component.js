@@ -5,29 +5,37 @@ import useStyles from './GaugeCharts-styles'
 import SingleChart from '../SingleGaugeChart/SingleGaugeChart'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import Container from '@material-ui/core/Container'
+import AreaChart from '../AreaChart/AreaChart-component'
 
-const GaugeCharts = ({ gaugeData }) => {
+const GaugeCharts = ({ areaData, gaugeData }) => {
   const classes = useStyles()
 
   return (
     !gaugeData.length ? <CircularProgress/> : (
       <>
         <Container maxWidth='lg' className={classes.root}>
-          <SingleChart gaugeData={ gaugeData[0] }
-          />
-          <SingleChart gaugeData={ gaugeData[1] }
-          />
-          <SingleChart gaugeData={ gaugeData[2] }
-          />
-          <br/>
-          <SingleChart gaugeData={ gaugeData[3] }
-          />
-          <SingleChart gaugeData={ gaugeData[4] }
-          />
-          <SingleChart gaugeData={ gaugeData[5] }
-          />
-
-
+          <div>
+            <SingleChart gaugeData={ gaugeData[0] }
+            />
+            <SingleChart gaugeData={ gaugeData[1] }
+            />
+            <SingleChart gaugeData={ gaugeData[2] }
+            />
+            <br/>
+            <SingleChart gaugeData={ gaugeData[3] }
+            />
+            <SingleChart gaugeData={ gaugeData[4] }
+            />
+            <SingleChart gaugeData={ gaugeData[5] }
+            />
+          </div>
+          <>
+            {
+              !areaData?.Basics?.length ? <CircularProgress/> : (
+                <AreaChart areaData={areaData}/>
+              )
+            }
+            </>
         </Container>
 
       </>
