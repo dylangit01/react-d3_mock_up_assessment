@@ -8,7 +8,6 @@ const AreaChart = ({ areaData }) => {
   const classes = useStyles()
 
   const currentName = useSelector(state => state.chartReducer)
-  console.log(currentName)
 
   const defaultData = areaData['Quality Score']
 
@@ -17,7 +16,7 @@ const AreaChart = ({ areaData }) => {
   let xData = currentName ? currData.map(value => value.date) : defaultData.map(value => value.date)
   let yData = currentName ? currData.map(value => value.score): defaultData.map(value => value.score)
 
-  console.log(xData, yData)
+  // console.log(xData, yData)
   // x=date
   // y=score
 
@@ -56,15 +55,12 @@ const AreaChart = ({ areaData }) => {
 
   return (
     <>
-
       <svg className={ classes.svg } ref={ svgRef }>
         <g className='x-axis' />
         <g className='y-axis' />
       </svg>
     </>
   )
-
-
 }
 
 export default AreaChart

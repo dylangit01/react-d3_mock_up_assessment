@@ -16,6 +16,7 @@ export default makeStyles(theme=>({
     borderRadius: '5px'
   },
   btn: {
+    textTransform: 'none',
     '&:hover': {
       backgroundColor: '#F2FAFE',
     },

@@ -10,6 +10,7 @@ const SingleChart = ({gaugeData}) => {
   const classes = useStyles()
 
   const {name, score, sample, vsly} = gaugeData
+  console.log(name)
   const svgRef = useRef()
   const data = [1-score/100, score/100]
 

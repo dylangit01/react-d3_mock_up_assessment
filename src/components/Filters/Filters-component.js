@@ -10,6 +10,7 @@ const Filter = () => {
   const classes = useStyles()
 
   const title = useSelector(state=> state.chartReducer)
+  console.log(title)
 
   return (
     <Container maxWidth='lg' className={ classes.root }>
@@ -41,16 +42,11 @@ const Filter = () => {
             {
               title ? `${title} Trend`.toUpperCase() : 'QUALITY SCORE TREND'
             }
-
-
-
           </Typography>
           <Buttons/>
         </Grid>
       </Grid>
-
     </Container>
-
   )
 }
 
