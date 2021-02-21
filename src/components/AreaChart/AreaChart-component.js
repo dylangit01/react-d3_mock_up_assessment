@@ -1,19 +1,21 @@
 import React, { useRef, useEffect } from 'react'
 import useStyles from './AreaChart-styles'
 import { select, area, axisBottom, curveCardinal, scaleLinear, axisRight } from 'd3'
+import { useSelector } from 'react-redux'
 
 
 const AreaChart = ({ areaData }) => {
   const classes = useStyles()
 
+  const currentName = useSelector(state => state.chartReducer)
 
-  // console.log(Object.keys(areaData))  //==> keys of this obj
-  const objKey = Object.keys(areaData).map(k => k)
+  const { Basics } = areaData
 
-  const { Basics, QualityScore, Interaction, Expertise, Process } = areaData
+  const currData = areaData[currentName]
+  console.log(currData)
 
-  let xData = QualityScore.map(value => value.date)
-  let yData = QualityScore.map(value => value.score)
+  let xData = currentName ? currData.map(value => value.date) : Basics.map(value => value.date)
+  let yData = currentName ? currData.map(value => value.score): Basics.map(value => value.score)
 
   console.log(xData, yData)
   // x=date
@@ -54,6 +56,7 @@ const AreaChart = ({ areaData }) => {
 
   return (
     <>
+
       <svg className={ classes.svg } ref={ svgRef }>
         <g className='x-axis' />
         <g className='y-axis' />

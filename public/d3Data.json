@@ -1,7 +1,7 @@
 {
     "gaugeData":[
        {
-          "name":"Quality Score",
+          "name":"QualityScore",
           "score":72,
           "vsly":null,
           "sample":133

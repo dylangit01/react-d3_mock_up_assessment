@@ -1,0 +1,1 @@
+export const GET_CURRENT_NAME = 'GET_CURRENT_NAME'

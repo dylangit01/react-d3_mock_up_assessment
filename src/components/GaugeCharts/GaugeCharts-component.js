@@ -37,31 +37,8 @@ const GaugeCharts = ({ areaData, gaugeData }) => {
             }
             </>
         </Container>
-
       </>
     )
-
-
-
-
-
-    // <>
-    //   { gaugeData.map((eachValue, index) => (
-    //     <div key={ eachValue?.name }>
-    //       {/*<GaugeChart chartData={ eachValue }*/}
-    //       {/*            index={index}*/}
-    //       {/*            title={eachValue?.name}*/}
-    //       {/*/>*/}
-    //
-    //       <GaugeChartWithPk key={ eachValue?.name } chartData={ eachValue }
-    //                   index={ index }
-    //                   title={ eachValue?.name }
-    //                   sample={eachValue?.sample}
-    //       />
-    //     </div>
-    //   )) }
-    // </>
-
   )
 }
 

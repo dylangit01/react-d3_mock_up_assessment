@@ -3,12 +3,17 @@ import {select, arc, pie} from 'd3'
 import useStyles from './SingleGaugeChart-styles'
 import Button from '@material-ui/core/Button'
 
+import {useDispatch} from 'react-redux'
+import {getCurrentName} from '../../react-redux/Actions/chartActions'
+
 const SingleChart = ({gaugeData}) => {
   const classes = useStyles()
 
   const {name, score, sample, vsly} = gaugeData
   const svgRef = useRef()
   const data = [1-score/100, score/100]
+
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const svg = select(svgRef.current)
@@ -36,10 +41,10 @@ const SingleChart = ({gaugeData}) => {
 
   return (
     <>
-          <Button className={classes.btn}>
+          <Button onClick={() => dispatch(getCurrentName(name))} className={classes.btn}>
             <div className={ classes.svgGrid }>
-              <p>{name}</p>
-              <p>{score} %</p>
+              <p className={classes.itemColor}>{name}</p>
+              <p className={classes.itemColor}>{score} %</p>
               <svg width='150' height='250' className={ classes.svg } ref={ svgRef }>
               </svg>
               <p>Sample: {sample}</p>

@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8856a28b-2e7a-4688-956e-0a570f350236" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/react-redux/Actions/chartActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-redux/Reducers/d3ChartReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-redux/Reducers/rootReducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-redux/constants/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/d3Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/d3Data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

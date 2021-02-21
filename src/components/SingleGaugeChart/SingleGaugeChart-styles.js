@@ -19,5 +19,8 @@ export default makeStyles(theme=>({
     '&:hover': {
       backgroundColor: '#F2FAFE',
     },
+  },
+  itemColor: {
+    color: '#5D70C1'
   }
 }))
