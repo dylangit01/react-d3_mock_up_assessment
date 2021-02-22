@@ -12,7 +12,6 @@ const GaugeCharts = () => {
   const classes = useStyles()
 
   const gaugeDataLists = useSelector(state => state.dataReducer.gaugeData)
-  console.log(gaugeDataLists)
   const areaDataOb = useSelector(state => state.dataReducer.areaData)
 
   // This is not the optimized way to show the chart dynamically, but I dont know how to style d3/SVG if mapping them in child component...tried grid, but no luck
