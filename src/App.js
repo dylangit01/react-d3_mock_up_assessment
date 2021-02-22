@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import SideMenu from './components/SideMenu/SideMenu-component'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Header from './components/Header/Header-component'
@@ -19,13 +19,13 @@ const useStyles = makeStyles({
 const App = () => {
   const classes = useStyles()
 
-  const [gaugeData, setGaugeData] = useState([])
-  const [areaData, setAreaData] = useState([])
+  const [ gaugeData, setGaugeData ] = useState([])
+  const [ areaData, setAreaData ] = useState([])
 
-  const getData= async () => {
+  const getData = async () => {
     const res = await fetch('d3Data.json')
     const data = await res.json()
-    const {gaugeData, areaData} = await data
+    const { gaugeData, areaData } = await data
     setGaugeData(gaugeData)
     setAreaData(areaData)
   }
@@ -43,10 +43,10 @@ const App = () => {
           <PageHeader
             title='PERFORMANCE MANAGEMENT'
             subTitle='Diagnostic Tool'
-            icon={<LanguageIcon fontSize='large'/>}
+            icon={ <LanguageIcon fontSize='large'/> }
           />
-            <Filter />
-            <GaugeCharts areaData={areaData} gaugeData={gaugeData} />
+          <Filter/>
+          <GaugeCharts areaData={ areaData } gaugeData={ gaugeData }/>
         </div>
       </CssBaseline>
     </>
