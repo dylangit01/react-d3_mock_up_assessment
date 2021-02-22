@@ -8,6 +8,9 @@ import LanguageIcon from '@material-ui/icons/Language';
 import Filter from './components/Filters/Filters-component'
 import GaugeCharts from './components/GaugeCharts/GaugeCharts-component'
 
+import {useDispatch} from 'react-redux'
+import {fetchData} from './react-redux/Actions/fetchDataActions'
+
 const useStyles = makeStyles({
   appMain: {
     paddingLeft: '50px',
@@ -19,20 +22,23 @@ const useStyles = makeStyles({
 const App = () => {
   const classes = useStyles()
 
-  const [ gaugeData, setGaugeData ] = useState([])
-  const [ areaData, setAreaData ] = useState([])
+  // const [ gaugeData, setGaugeData ] = useState([])
+  // const [ areaData, setAreaData ] = useState([])
+  //
+  // const getData = async () => {
+  //   const res = await fetch('d3Data.json')
+  //   const data = await res.json()
+  //   const { gaugeData, areaData } = await data
+  //   setGaugeData(gaugeData)
+  //   setAreaData(areaData)
+  // }
 
-  const getData = async () => {
-    const res = await fetch('d3Data.json')
-    const data = await res.json()
-    const { gaugeData, areaData } = await data
-    setGaugeData(gaugeData)
-    setAreaData(areaData)
-  }
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    getData()
-  }, [])
+    // getData()
+    dispatch(fetchData())
+  }, [dispatch])
 
   return (
     <>
@@ -46,7 +52,7 @@ const App = () => {
             icon={ <LanguageIcon fontSize='large'/> }
           />
           <Filter/>
-          <GaugeCharts areaData={ areaData } gaugeData={ gaugeData }/>
+          <GaugeCharts/>
         </div>
       </CssBaseline>
     </>

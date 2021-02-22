@@ -3,14 +3,16 @@ import useStyles from './AreaChart-styles'
 import { select, area, axisBottom, curveCardinal, scaleLinear, axisRight } from 'd3'
 import { useSelector } from 'react-redux'
 
-const AreaChart = ({ areaData }) => {
+const AreaChart = () => {
   const classes = useStyles()
 
   const currentName = useSelector(state => state.chartReducer)
 
-  const defaultData = areaData['Quality Score']
+  const areaDataObj = useSelector(state => state.dataReducer.areaData)
 
-  const currData = areaData[currentName]
+  const defaultData = areaDataObj['Quality Score']
+
+  const currData = areaDataObj[currentName]
 
   let xData = currentName ? currData.map(value => value.date) : defaultData.map(value => value.date)
   let yData = currentName ? currData.map(value => value.score) : defaultData.map(value => value.score)

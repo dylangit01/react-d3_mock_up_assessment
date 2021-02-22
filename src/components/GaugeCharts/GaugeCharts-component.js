@@ -6,35 +6,40 @@ import SingleChart from '../SingleGaugeChart/SingleGaugeChart'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import Container from '@material-ui/core/Container'
 import AreaChart from '../AreaChart/AreaChart-component'
+import { useSelector } from 'react-redux'
 
-const GaugeCharts = ({ areaData, gaugeData }) => {
+const GaugeCharts = () => {
   const classes = useStyles()
 
-  // This is not the way to show the chart dynamically, but I dont know how to style d3/SVG if mapping them in child component...
+  const gaugeDataLists = useSelector(state => state.dataReducer.gaugeData)
+  console.log(gaugeDataLists)
+  const areaDataOb = useSelector(state => state.dataReducer.areaData)
+
+  // This is not the optimized way to show the chart dynamically, but I dont know how to style d3/SVG if mapping them in child component...tried grid, but no luck
 
   return (
-    !gaugeData.length ? <CircularProgress/> : (
+    !gaugeDataLists.length ? <CircularProgress/> : (
       <>
         <Container maxWidth='lg' className={ classes.root }>
           <div>
-            <SingleChart gaugeData={ gaugeData[0] }
+            <SingleChart gaugeData={ gaugeDataLists[0] }
             />
-            <SingleChart gaugeData={ gaugeData[1] }
+            <SingleChart gaugeData={ gaugeDataLists[1] }
             />
-            <SingleChart gaugeData={ gaugeData[2] }
+            <SingleChart gaugeData={ gaugeDataLists[2] }
             />
             <br/>
-            <SingleChart gaugeData={ gaugeData[3] }
+            <SingleChart gaugeData={ gaugeDataLists[3] }
             />
-            <SingleChart gaugeData={ gaugeData[4] }
+            <SingleChart gaugeData={ gaugeDataLists[4] }
             />
-            <SingleChart gaugeData={ gaugeData[5] }
+            <SingleChart gaugeData={ gaugeDataLists[5] }
             />
           </div>
           <>
             {
-              !areaData?.Basics?.length ? <CircularProgress/> : (
-                <AreaChart areaData={ areaData }/>
+              !areaDataOb?.Basics?.length ? <CircularProgress/> : (
+                <AreaChart />
               )
             }
           </>
