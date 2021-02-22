@@ -14,26 +14,30 @@ const GaugeCharts = () => {
   const gaugeDataLists = useSelector(state => state.dataReducer.gaugeData)
   const areaDataOb = useSelector(state => state.dataReducer.areaData)
 
-  // This is not the optimized way to show the chart dynamically, but I dont know how to style d3/SVG if mapping them in child component...tried grid, but no luck
-
   return (
     !gaugeDataLists.length ? <CircularProgress/> : (
       <>
         <Container maxWidth='lg' className={ classes.root }>
-          <div>
-            <SingleChart gaugeData={ gaugeDataLists[0] }
-            />
-            <SingleChart gaugeData={ gaugeDataLists[1] }
-            />
-            <SingleChart gaugeData={ gaugeDataLists[2] }
-            />
-            <br/>
-            <SingleChart gaugeData={ gaugeDataLists[3] }
-            />
-            <SingleChart gaugeData={ gaugeDataLists[4] }
-            />
-            <SingleChart gaugeData={ gaugeDataLists[5] }
-            />
+          <div className={classes.gauLayout}>
+            {
+              gaugeDataLists.map(gaugeData => (
+                <GaugeChart key={gaugeData?.name} gaugeData = {gaugeData}/>
+              ))
+            }
+
+            {/*<SingleChart gaugeData={ gaugeDataLists[0] }*/}
+            {/*/>*/}
+            {/*<SingleChart gaugeData={ gaugeDataLists[1] }*/}
+            {/*/>*/}
+            {/*<SingleChart gaugeData={ gaugeDataLists[2] }*/}
+            {/*/>*/}
+            {/*<br/>*/}
+            {/*<SingleChart gaugeData={ gaugeDataLists[3] }*/}
+            {/*/>*/}
+            {/*<SingleChart gaugeData={ gaugeDataLists[4] }*/}
+            {/*/>*/}
+            {/*<SingleChart gaugeData={ gaugeDataLists[5] }*/}
+            {/*/>*/}
           </div>
           <>
             {

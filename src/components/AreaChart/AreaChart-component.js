@@ -26,7 +26,7 @@ const AreaChart = () => {
   useEffect(() => {
     const svg = select(svgRef.current)
     const xScale = scaleLinear().domain([ 0, xData.length - 1 ]).range([ 0, 450 ])
-    const yScale = scaleLinear().domain([ 0, 100 ]).range([ 150, 0 ])
+    const yScale = scaleLinear().domain([ 0, 90 ]).range([ 150, 0 ])
 
 
     const xAxis = axisBottom(xScale).ticks(xData.length).tickFormat((d, i) => [ 'Apr', 'May', 'Jun', 'Jul' ][i])

@@ -19,7 +19,10 @@ const PageHeader = ({ title, icon, subTitle }) => {
         <Container maxWidth='lg'>
           <div className={ classes.sub }>
             <div className={ classes.subContent }>
-              { icon }
+              <div className={classes.subIcon}>
+                { icon }
+              </div>
+
               <Typography variant='h5' component='div'>
                 { subTitle }
               </Typography>

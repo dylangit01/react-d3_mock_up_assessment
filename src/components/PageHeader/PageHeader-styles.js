@@ -21,6 +21,11 @@ export default makeStyles(theme => ({
     height: '100%',
     lingHeight: '100px'
   },
+  subIcon: {
+    display: 'flex',
+    alignItems: 'center',
+    marginRight: '5px'
+  },
   subBg: {
     backgroundColor: '#EDECEC'
   }
