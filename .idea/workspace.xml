@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8856a28b-2e7a-4688-956e-0a570f350236" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AreaChart/AreaChart-styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GaugeChart/GaugeChart-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GaugeChart/GaugeChart-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GaugeChart/GaugeChart-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GaugeChart/GaugeChart-styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GaugeCharts/GaugeCharts-styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageHeader/PageHeader-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideMenu/SideMenu-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideMenu/SideMenu-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart-styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SingleGaugeChart/SingleGaugeChart.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

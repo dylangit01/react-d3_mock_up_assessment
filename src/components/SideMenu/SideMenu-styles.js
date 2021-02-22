@@ -8,7 +8,7 @@ export default makeStyles(theme => ({
     position: 'absolute',
     left: 0,
     width: '50px',
-    height: '100%',
+    height: '100vh',
     backgroundColor: '#003C71',
     color: 'white',
     paddingTop: '50px'

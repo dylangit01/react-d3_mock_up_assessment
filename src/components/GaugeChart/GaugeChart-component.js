@@ -3,9 +3,6 @@ import {select, arc, pie} from 'd3'
 import useStyles from './GaugeChart-styles'
 import Button from '@material-ui/core/Button'
 
-// !! Not using this component as no idea how to style all SVG gauge charts in proper way ..lol...
-
-
 import { useDispatch } from 'react-redux'
 import { getCurrentName } from '../../react-redux/Actions/chartActions'
 

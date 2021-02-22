@@ -2,7 +2,6 @@ import React from 'react'
 import GaugeChart from '../GaugeChart/GaugeChart-component'
 import GaugeChartWithPk from '../GaugeChartWithPk/GaugeChartWithPk'
 import useStyles from './GaugeCharts-styles'
-import SingleChart from '../SingleGaugeChart/SingleGaugeChart'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import Container from '@material-ui/core/Container'
 import AreaChart from '../AreaChart/AreaChart-component'
@@ -18,31 +17,17 @@ const GaugeCharts = () => {
     !gaugeDataLists.length ? <CircularProgress/> : (
       <>
         <Container maxWidth='lg' className={ classes.root }>
-          <div className={classes.gauLayout}>
+          <div className={ classes.gauLayout }>
             {
               gaugeDataLists.map(gaugeData => (
-                <GaugeChart key={gaugeData?.name} gaugeData = {gaugeData}/>
+                <GaugeChart key={ gaugeData?.name } gaugeData={ gaugeData }/>
               ))
             }
-
-            {/*<SingleChart gaugeData={ gaugeDataLists[0] }*/}
-            {/*/>*/}
-            {/*<SingleChart gaugeData={ gaugeDataLists[1] }*/}
-            {/*/>*/}
-            {/*<SingleChart gaugeData={ gaugeDataLists[2] }*/}
-            {/*/>*/}
-            {/*<br/>*/}
-            {/*<SingleChart gaugeData={ gaugeDataLists[3] }*/}
-            {/*/>*/}
-            {/*<SingleChart gaugeData={ gaugeDataLists[4] }*/}
-            {/*/>*/}
-            {/*<SingleChart gaugeData={ gaugeDataLists[5] }*/}
-            {/*/>*/}
           </div>
           <>
             {
               !areaDataOb?.Basics?.length ? <CircularProgress/> : (
-                <AreaChart />
+                <AreaChart/>
               )
             }
           </>

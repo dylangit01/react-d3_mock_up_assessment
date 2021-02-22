@@ -50,7 +50,7 @@ const AreaChart = () => {
       .join('path')
       .attr('class', 'line')
       .attr('d', myArea)
-      .attr('fill', '#006BC3')
+      .attr('fill', '#3D93D3')
   }, [ yData ])
 
   return (
