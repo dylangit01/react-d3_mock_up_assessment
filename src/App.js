@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import SideMenu from './components/SideMenu/SideMenu-component'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Header from './components/Header/Header-component'

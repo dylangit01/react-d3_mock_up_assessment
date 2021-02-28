@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux'
 const Filter = () => {
   const classes = useStyles()
 
-  const title = useSelector(state => state.chartReducer)
+  const title = useSelector(state => state.chartReducer.name)
 
   return (
     <Container maxWidth='lg' className={ classes.root }>

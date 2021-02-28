@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 const AreaChart = () => {
   const classes = useStyles()
 
-  const currentName = useSelector(state => state.chartReducer)
+  const currentName = useSelector(state => state.chartReducer.name)
 
   const areaDataObj = useSelector(state => state.dataReducer.areaData)
 
@@ -51,7 +51,7 @@ const AreaChart = () => {
       .attr('class', 'line')
       .attr('d', myArea)
       .attr('fill', '#3D93D3')
-  }, [ yData ])
+  }, [ yData, xData ])
 
   return (
     <>
